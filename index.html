@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600&display=swap');
+
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body
+    {
+    font-family: "josefin sans", sans-serif;
+    font-size: 16px;
+    }
+    header
+    {
+      height: auto;
+      padding: 30px;
+    }
+    header img{
+      width: 150px;
+    }
+    .container
+    {
+      min-height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-content: center;
+      justify-content: flex-end;
+      text-align: center;
+      background-image: linear-gradient(135deg, hsl(0,0%,100%),hsl(0,100%,98%));
+      }
+      .container .left
+      {
+        width: 100%;
+        height: auto;
+        padding: 50px 30px 0 30px;
+      }
+      .container .right
+      {
+        width: 100%;
+        height: 250px;
+        background-image: url(./images/hero-desktop.jpg);
+        background-size: cover;
+        background-position: center ;
+      }
+      .container .left h1{
+        font-size: 3.2rem;
+        font-weight: 200;
+        text-transform: uppercase;
+        color: hsl(0,93%,68%);
+        line-height: 3.5rem;
+        letter-spacing: 0.7rem;
+      }
+      .container .left h1 span
+      {
+      color: hsl(0, 6%,24%);
+      font-weight: 700;
+      }
+      .container .left p
+      {
+        max-width: 450px;
+        margin: 0 auto;
+        color:  hsl(0,36%,70%);
+        line-height: 1.5rem;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+      .container form
+      {
+        position: relative;
+        display: block;
+        height: 50px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .container form input
+      {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        border-radius: 50px;
+        left: 0;
+        top: 0;
+        border: 1px solid hsl(0,36%,70%);
+        padding-left: 30px;
+        font-family: 'josefin Sans',sans-serif;
+        font-size: 1.1rem;
+      }
+      .container form button
+      {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 70px;
+        border-radius: 50px;
+        outline: none;
+        border: none;
+        background-image: linear-gradient(133deg, hsl(0,80%,86%),hsl(0,74%,74%));
+        box-shadow: 0px 0px 18px 1px rgb(241, 85, 85);
+      }
+      .container form button:hover
+      {
+        background-image: linear-gradient(135deg,hsl(0,80%,86%),hsla(0.52%,80%,0.781));
+        box-shadow: 0px 0px 13px 2px #f4aaabbf;
+      }
+      .container form input::placeholder
+      {
+        color: hsl(0,36%,70%);
+        opacity: 0;
+      }
+
+      
+
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <Header>
+    <img src="./images/logo.svg" alt="logo" class="logo">
+  </Header>
+  <div class="container">
+    <div class="left">
+     <h1> We're<br><span>coming<br> soon</span></h1>
+     <p>
+     Hello fellow shoppers! We're currently building our new fashion store.
+     Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      <form action="#">
+        <input type="email" name="e-mail" placeholder="Enter e-mail" required>
+        <button type="button"><a href="page.html"><img src="./images/icon-arrow.svg" alt="submit"></a></button>
+
+      </form>
+    </div>
+    <div class="right">
+
+    </div>
+
+  </div>
+
+  
+  <footer>
+    
+  </footer>
+  
+</body>
+</html>
